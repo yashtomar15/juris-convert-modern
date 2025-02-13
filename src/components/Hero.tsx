@@ -1,8 +1,11 @@
 
 import { ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white to-primary/5">
       <div className="absolute inset-0 overflow-hidden">
@@ -25,7 +28,11 @@ const Hero = () => {
         </p>
         
         <div className="animate-fadeIn opacity-0 [--animation-delay:800ms] flex flex-col sm:flex-row gap-4 w-full justify-center">
-          <Button size="lg" className="bg-primary hover:bg-primary-dark text-white min-w-[200px]">
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary-dark text-white min-w-[200px]"
+            onClick={() => navigate('/schedule')}
+          >
             Free Consultation
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
