@@ -5,33 +5,33 @@ import { Button } from "@/components/ui/button";
 const practices = [
   {
     icon: GavelIcon,
-    title: "Criminal Law",
-    description: "Expert defense in criminal cases with a proven track record of successful outcomes."
+    title: "Environmental Litigation",
+    description: "Representing clients in complex environmental disputes and regulatory compliance matters."
   },
   {
     icon: HomeIcon,
-    title: "Family Law",
-    description: "Compassionate guidance through divorce, custody, and other family matters."
+    title: "Climate Policy",
+    description: "Advising on climate change legislation, carbon markets, and environmental regulations."
   },
   {
     icon: ScaleIcon,
-    title: "Civil Litigation",
-    description: "Strategic representation in complex civil disputes and lawsuits."
+    title: "Renewable Energy",
+    description: "Legal support for renewable energy projects, from development to implementation."
   },
   {
     icon: HeartHandshakeIcon,
-    title: "Personal Injury",
-    description: "Dedicated advocacy for accident victims seeking fair compensation."
+    title: "Sustainable Development",
+    description: "Guidance on sustainable business practices and environmental compliance."
   },
   {
     icon: BuildingIcon,
-    title: "Real Estate Law",
-    description: "Comprehensive legal services for all real estate transactions."
+    title: "Green Real Estate",
+    description: "Legal expertise in sustainable building practices and environmental certifications."
   },
   {
     icon: ShieldIcon,
-    title: "Corporate Law",
-    description: "Strategic business counsel for companies of all sizes."
+    title: "Environmental Protection",
+    description: "Advocacy for conservation efforts and natural resource protection."
   }
 ];
 
@@ -41,10 +41,10 @@ const PracticeAreas = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">
-            Our Practice Areas
+            Our Environmental Expertise
           </h2>
           <p className="text-neutral-light max-w-2xl mx-auto">
-            We offer comprehensive legal services across multiple practice areas, providing expert counsel and representation.
+            We provide comprehensive legal services focused on environmental protection and sustainable development.
           </p>
         </div>
 
