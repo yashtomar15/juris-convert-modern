@@ -26,9 +26,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#9b87f5",
-          dark: "#7E69AB",
-          light: "#D6BCFA"
+          DEFAULT: "#357190",
+          dark: "#285770", // Darker shade of the primary color
+          light: "#4A8CAD" // Lighter shade of the primary color
         },
         neutral: {
           dark: "#1A1F2C",
@@ -36,7 +36,7 @@ export default {
           light: "#8E9196"
         },
         accent: {
-          DEFAULT: "#6E59A5",
+          DEFAULT: "#357190",
           foreground: "#FFFFFF"
         }
       },
