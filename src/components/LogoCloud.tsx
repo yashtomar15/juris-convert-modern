@@ -50,7 +50,7 @@ const LogoCloud = () => {
         </div>
 
         <div className="relative">
-          <div className="flex animate-marquee">
+          <div className="flex animate-[marquee_15s_linear_infinite]">
             {[...logos, ...logos].map((logo, index) => (
               <div
                 key={index}

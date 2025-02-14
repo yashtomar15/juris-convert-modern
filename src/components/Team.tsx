@@ -1,5 +1,5 @@
 
-import { Linkedin, Twitter, Mail } from 'lucide-react';
+import { Linkedin, Twitter, Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
@@ -51,21 +51,24 @@ const Team = () => {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
               <img
                 src={member.image}
                 alt={member.name}
                 className="w-full h-64 object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-neutral-dark mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-primary font-medium mb-2">{member.role}</p>
-                <p className="text-neutral-light text-sm mb-4">{member.bio}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex space-x-4">
+              <div className="p-6 flex-1 flex flex-col">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-neutral-dark mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-primary font-medium mb-2">{member.role}</p>
+                  <p className="text-neutral-light text-sm">{member.bio}</p>
+                </div>
+                
+                <div className="mt-6 flex flex-col space-y-4">
+                  <div className="flex justify-center space-x-4">
                     <a href="#" className="text-neutral-light hover:text-primary transition-colors">
                       <Linkedin className="h-5 w-5" />
                     </a>
@@ -76,9 +79,13 @@ const Team = () => {
                       <Mail className="h-5 w-5" />
                     </a>
                   </div>
-                  <Link to={`/team/${member.id}`}>
-                    <Button variant="outline" className="text-primary border-primary hover:bg-primary/5">
+                  <Link to={`/team/${member.id}`} className="w-full">
+                    <Button 
+                      variant="link" 
+                      className="w-full text-primary hover:text-primary-dark"
+                    >
                       Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
                 </div>
