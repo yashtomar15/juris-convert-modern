@@ -27,8 +27,8 @@ export default {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "#357190",
-          dark: "#285770", // Darker shade of the primary color
-          light: "#4A8CAD" // Lighter shade of the primary color
+          dark: "#285770",
+          light: "#4A8CAD"
         },
         neutral: {
           dark: "#1A1F2C",
@@ -42,6 +42,9 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(to right, #b4e8ff 0%, #01ace3 100%)',
       },
       keyframes: {
         "accordion-down": {
