@@ -1,34 +1,41 @@
 
 import { GavelIcon, HomeIcon, ScaleIcon, HeartHandshakeIcon, BuildingIcon, ShieldIcon } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const practices = [
   {
+    id: "environmental-litigation",
     icon: GavelIcon,
     title: "Environmental Litigation",
     description: "Representing clients in complex environmental disputes and regulatory compliance matters."
   },
   {
+    id: "climate-policy",
     icon: HomeIcon,
     title: "Climate Policy",
     description: "Advising on climate change legislation, carbon markets, and environmental regulations."
   },
   {
+    id: "renewable-energy",
     icon: ScaleIcon,
     title: "Renewable Energy",
     description: "Legal support for renewable energy projects, from development to implementation."
   },
   {
+    id: "sustainable-development",
     icon: HeartHandshakeIcon,
     title: "Sustainable Development",
     description: "Guidance on sustainable business practices and environmental compliance."
   },
   {
+    id: "green-real-estate",
     icon: BuildingIcon,
     title: "Green Real Estate",
     description: "Legal expertise in sustainable building practices and environmental certifications."
   },
   {
+    id: "environmental-protection",
     icon: ShieldIcon,
     title: "Environmental Protection",
     description: "Advocacy for conservation efforts and natural resource protection."
@@ -61,9 +68,11 @@ const PracticeAreas = () => {
               <p className="text-neutral-light mb-4">
                 {practice.description}
               </p>
-              <Button variant="link" className="text-primary hover:text-primary-dark p-0">
-                Learn More →
-              </Button>
+              <Link to={`/expertise/${practice.id}`}>
+                <Button variant="link" className="text-primary hover:text-primary-dark p-0">
+                  Learn More →
+                </Button>
+              </Link>
             </div>
           ))}
         </div>
